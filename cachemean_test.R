@@ -1,0 +1,13 @@
+source('cachemean.R')
+
+x <- makeVector()
+print("Vector Empty")
+print(cachemean(x))
+print("and again...")
+print(cachemean(x))
+print('')
+print("Vector 1:50")
+x$set(1:50)
+print(cachemean(x))
+print("and again...")
+print(cachemean(x))

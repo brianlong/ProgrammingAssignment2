@@ -1,0 +1,10 @@
+source('cachematrix.R')
+
+x <- makeCacheMatrix()
+x$set(matrix(c(1,2,11,12), ncol=2, nrow=2, byrow=TRUE))
+message("Matrix:")
+print(x$get())
+message("Solving...")
+print(cacheSolve(x))
+message("and again...")
+print(cacheSolve(x))
